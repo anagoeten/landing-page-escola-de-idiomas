@@ -665,6 +665,239 @@ header {
     display: none;
 }
 
+/*cta*/
+
+.cta-card {
+    background-image: url(./assets/escola-de-idiomas-cta-card.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 64px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+}
+
+.cta-title-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.cta-title-container h2, .cta-title-container p {
+    text-align: center;
+}
+
+.cta-email-container {
+    display: flex;
+    background-color: #F5F4F5;
+    padding: 8px;
+    border-radius: 100px;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.cta-email-container label {
+    display: none;
+}
+
+.cta-email-container input {
+    border: #F5F4F5 solid 1px;
+    background-color: #F5F4F5;
+    border-radius: 100px;
+    padding: 0 8px;
+}
+
+.cta-email-container input:focus {
+    outline: none;
+    border: rgba(0, 0, 0, 0.1) solid 0.5px;
+}
+
+.cta-card span {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/*contato*/
+
+.contato-title-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.contato-title-container h2, .contato-title-container p {
+    text-align: center;
+}
+
+.contato-content-container {
+    width: 100%;
+    display: flex;
+    gap: 64px;
+}
+
+.contato-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-color: #f7edfc;
+    padding: 24px;
+    border-radius: 16px;
+    width: 40%;
+}
+
+.contato-list-iten {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contato-list-iten img {
+    width: 24px;
+    height: 24px;
+}
+
+.contato-list-iten h4 {
+    margin: 8px 0;
+}
+
+.contato-list-iten p {
+    font-size: 16px;
+}
+
+.contato-map-container {
+    width: 60%;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 80px 5%;
+}
+
+footer p{
+    font-size: 16px;
+
+}
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    gap: 64px;
+}
+
+.footer-column-1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-newsletter {
+    width: 250px;
+    display: flex;
+    background-color: #F5F4F5;
+    padding: 0;
+    border-radius: 100px;
+    gap: 8px;
+}
+
+.footer-newsletter label {
+    display: none;
+}
+
+.footer-newsletter input {
+    border: #F5F4F5 solid 1px;
+    background-color: #F5F4F5;
+    border-radius: 100px;
+    padding: 0 8px;
+}
+
+.footer-newsletter input:focus {
+    outline: none;
+    border: rgba(0, 0, 0, 0.1) solid 0.5px;
+}
+
+.footer-newsletter button {
+    background-color: #F5F4F5;
+    border: #CDCACE solid 1px;
+    color: #29272A;
+    padding: 6px 18px;
+    font-size: 14px;
+}
+
+.footer-column-1 span {
+    font-size: 14px;
+}
+
+.footer-links {
+    width: 50%;
+    display: flex;
+    gap: 64px;
+}
+
+.footer-column-2, .footer-column-3, .footer-column-4 {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-column-2 p, .footer-column-3 p, .footer-column-4 p {
+    font-weight: 700;
+}
+
+.footer-column-2 ul, .footer-column-3 ul, .footer-column-4 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-column-4 a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-divider {
+    width: 100%;
+    border-bottom: rgba(0, 0, 0, 0.05) solid 1px;
+}
+
+.footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-copyright {
+    width: 50%;
+}
+.footer-privacy-policy {
+    width: 50%;
+}
+
+.footer-privacy-policy ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+}
+
+.footer-privacy-policy a {
+    font-size: 14px;
+}
+
 @media (max-width: 1150px) {
     h1 {
         font-size: 48px;
@@ -688,6 +921,7 @@ header {
 
     section {
         padding: 80px 32px;
+        gap: 64px;
     }
 
     .menu,
@@ -768,6 +1002,11 @@ header {
     #radio2:checked ~ .first {
         margin-left: -24%;
     }
+
+    /*contato*/
+    .contato-content-container {
+        gap:32px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -847,6 +1086,51 @@ header {
         margin-left: -40%;
     }
 
+    /*footer*/
+
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .footer-column-1 {
+        width: 100%;
+    }
+
+    .footer-links {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer-copyright {
+        width: 100%;
+    }
+
+    .footer-privacy-policy {
+        width: 100%;
+    }
+
+    .footer-privacy-policy ul {
+        justify-content: flex-start;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .contato-content-container {
+        flex-direction: column;
+    }
+
+    .contato-list-container {
+        width: 50%;
+    }
+
+    .contato-map-container {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -879,10 +1163,19 @@ header {
         width: 90%;
     }
 
+    /*cta*/
+
+    .cta-card {
+        padding: 64px 32px;
+    }
     
 }
 
 @media (max-width: 635px) {
+    .hero-title-container {
+        width: 90%;
+    }
+
     .hero-column-1 {
         width: 70%;
     }
@@ -895,10 +1188,20 @@ header {
         display: none;
     }
 
+    /*sobre*/
+
+    .sobre-title-container {
+        width: 90%;
+    }
+
     /*idiomas*/
 
     .idiomas-container {
         flex-direction: column-reverse;
+    }
+
+    .idiomas-title-container {
+        width: 90%;
     }
 
     .idiomas-image-container {
@@ -908,11 +1211,19 @@ header {
 
     /*metodologia*/
 
+    .metodologia-title-container {
+        width: 90%;
+    }
+
     .metodologia-cards-container {
         width: 100%;
     }
 
     /*depoimentos*/
+
+    .depoimentos-title-container {
+        width: 90%;
+    }
 
     .depoimentos-slides {
         width: 600%;
@@ -946,6 +1257,28 @@ header {
 
     #manual-btn-4, #manual-btn-5, #manual-btn-6 {
         display: block;
+    }
+
+    /*planos*/
+
+    .planos-title-container {
+        width: 90%;
+    }
+
+    /*cta*/
+
+    .cta-title-container {
+        width: 100%;
+    }
+
+    /*contato*/
+
+    .contato-title-container {
+        width: 90%;
+    }
+
+    .contato-list-container {
+        width: 70%;
     }
 }
 
@@ -1022,6 +1355,10 @@ header {
 
     /*metodologia*/
 
+    .metodologia-title-container {
+        width: 100%;
+    }
+
     .metodologia-cards-container {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, 1fr);
@@ -1065,6 +1402,10 @@ header {
 
     /*planos*/
 
+    .planos-title-container {
+        width: 100%;
+    }
+
     .planos-cards {
         width: 33%;
     }
@@ -1077,6 +1418,26 @@ header {
         margin-left: -72%;
     }
 
+    /*contato*/
+
+    .contato-title-container {
+        width: 100%;
+    }
+
+    .contato-list-container {
+        width: 100%;
+    }
+
+    /*footer*/
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-privacy-policy ul {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -1188,6 +1549,16 @@ header {
     #radio9:checked ~ .first {
         margin-left: -73.5%;
     }
+
+    /*cta*/
+
+    .cta-email-container {
+        width: 280px;
+    }
+
+    .cta-email-container input {
+        width: 100%;
+    }
 }
 
 @media (max-width: 300px) {
@@ -1224,4 +1595,40 @@ header {
     #radio9:checked ~ .first {
         margin-left: -74%;
     }
+}
+
+/*animação*/
+
+.hiden {
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.show {
+    opacity: 1;
+    transition: all 1.5s;
+}
+
+.idiomas-cards-container :nth-child(2){
+    transition-delay: 400ms;
+}
+
+.idiomas-cards-container :nth-child(3){
+    transition-delay: 600ms;
+}
+
+.idiomas-cards-container :nth-child(4){
+    transition-delay: 800ms;
+}
+
+.metodologia-cards-container :nth-child(2){
+    transition-delay: 400ms;
+}
+
+.metodologia-cards-container :nth-child(3){
+    transition-delay: 600ms;
+}
+
+.metodologia-cards-container :nth-child(4){
+    transition-delay: 800ms;
 }
