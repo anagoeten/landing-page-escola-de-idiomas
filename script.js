@@ -9,6 +9,7 @@ function menuShow() {
     }
 };
 
+
 const hiden = document.querySelectorAll('.hiden');
 
 const myObserver = new IntersectionObserver((entries) => {
