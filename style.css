@@ -632,12 +632,12 @@ header {
     gap: 16px;
 }
 
-.planos-vantagens-list-iten {
+.planos-vantagens-list-item {
     display: flex;
     gap: 8px;
 }
 
-.planos-vantagens-list-iten img {
+.planos-vantagens-list-item img {
     width: 24px;
     height: 24px;
 }
@@ -755,22 +755,22 @@ header {
     width: 40%;
 }
 
-.contato-list-iten {
+.contato-list-item {
     display: flex;
     flex-direction: column;
     
 }
 
-.contato-list-iten img {
+.contato-list-item img {
     width: 24px;
     height: 24px;
 }
 
-.contato-list-iten h4 {
+.contato-list-item h4 {
     margin: 8px 0;
 }
 
-.contato-list-iten p {
+.contato-list-item p {
     font-size: 16px;
 }
 
@@ -942,6 +942,7 @@ footer p{
     .hero {
         background-image: url('./assets/hero-backgraund-mobile.png');
         background-position: 50% 50%;
+        padding: 80px 32px;
     }
 
     .hero-images-container {
@@ -1306,6 +1307,11 @@ footer p{
         gap: 64px;
     }
     
+    .hero {
+        padding: 112px 20px 64px 20px;
+        gap: 64px;
+    }
+
     .hero-title-container {
         width: 100%;
     }
