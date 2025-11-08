@@ -100,6 +100,22 @@ button:hover {
     color: #66148F;
 }
 
+/* A11y: keyboard focus */
+:focus-visible {
+    outline: 3px solid #66148F;
+    outline-offset: 2px;
+}
+
+.manual-btn:focus-visible,
+.hamburger:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid #66148F;
+    outline-offset: 3px;
+    border-radius: 6px;
+}
+
 /*Header*/
 
 header {
